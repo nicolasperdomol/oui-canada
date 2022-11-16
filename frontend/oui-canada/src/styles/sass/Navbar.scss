@@ -1,9 +1,25 @@
 @use "sass:map";
+@import "./themes";
+
+@each $theme in $themes{
+    .#{$theme}_header{
+        color: getValue($theme, "primaryColor");
+    }
+}
 
 #navbar{
-    min-height: 40px;
     font-size: 1.02em;
     background-color: #fff;
+}
+
+.servicesDropdown > .Dropdown-control{
+    border:none;
+    border-radius: none;
+    color : #212529;
+}
+
+.servicesDropdown > .Dropdown-control > .Dropdown-arrow-wrapper > .Dropdown-arrow{
+    border-style: none;
 }
 
 .navbarLink {

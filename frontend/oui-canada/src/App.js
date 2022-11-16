@@ -1,12 +1,16 @@
 import React, {useState, useEffect} from "react";
 import Home from "./components/Home";
-import Navbar from './components/Navbar';
 import HashLoader from "react-spinners/HashLoader";
-import "./styles/css/main.css";
 import {Routes, Route} from "react-router-dom";
+import "./styles/css/main.css";
+import "./components/Navbar"
+import Navbar from "./components/Navbar";
 
 function App() {
   const [loading, setLoading] = useState(true);
+  const themes = ["blue", "grey", "red", "yellow"];
+  const randIndex = Math.floor(Math.random() * 4);
+  const mainTheme = themes[randIndex];
   
   useEffect(()=>{
     setTimeout(()=>{
@@ -28,8 +32,9 @@ function App() {
         </div>
         :
         <>
+          <Navbar mainTheme={mainTheme}/>
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<Home themes = {themes} mainTheme = {mainTheme}/>} />
             <Route path="/about" element={<h1>about</h1>} />
           </Routes>
         </>

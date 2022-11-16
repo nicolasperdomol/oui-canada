@@ -1,7 +1,32 @@
+.blue_header {
+  color: #86A5B8;
+}
+
+.grey_header {
+  color: #F2786D;
+}
+
+.red_header {
+  color: #FFD3CD;
+}
+
+.yellow_header {
+  color: #EDDBB7;
+}
+
 #navbar {
-  min-height: 40px;
   font-size: 1.02em;
   background-color: #fff;
+}
+
+.servicesDropdown > .Dropdown-control {
+  border: none;
+  border-radius: none;
+  color: #212529;
+}
+
+.servicesDropdown > .Dropdown-control > .Dropdown-arrow-wrapper > .Dropdown-arrow {
+  border-style: none;
 }
 
 .navbarLink {

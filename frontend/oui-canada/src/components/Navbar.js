@@ -4,7 +4,7 @@ import 'react-dropdown/style.css';
 import { t } from "i18next";
 import "../styles/css/Navbar.css"
 
-const Navbar = () => {
+const Navbar = (props) => {
     const languages = [
         'en', 'es'
     ];
@@ -25,19 +25,20 @@ const Navbar = () => {
     }
 
     return (
-        <div id="navbar" className="container my-5">
-            <div className="row d-flex align-items-center">
-                <div id="ouiCanada" className="col-5"><a href="/" className="navbarLink homeTitle">Oui Canada</a></div>
-                <div className="col"><a href="/about" className="navbarLink">{t("aboutUs")}</a></div>
-                <div className="col">
-                    <Dropdown className="servicesDropdown" options={["First service", "Another service"]} onChange={(event)=>{handleServices(event.value)}} value={t("services")} placeholder="Select a service" />
-                </div>
-                <div className="col"><a href="/contact" className="navbarLink">{t("contact")}</a></div>
-                <div className="col-1">
-                    <Dropdown options={languages} onChange={(event)=>{setLangCookie(event)}} value={getLangCookie("i18next")} placeholder="Select a language" />
+            <div id="navbar" className="container my-5">
+                <div className="row d-flex align-items-center">
+                    <div id="ouiCanada" className="col-5"><a href="/" className="navbarLink homeTitle">Oui Canada</a></div>
+                    <div className="col"><a href="/about" className="navbarLink">{t("aboutUs")}</a></div>
+                    <div className="col">
+                        <Dropdown className="servicesDropdown" options={["First service", "Another service"]} onChange={(event)=>{handleServices(event.value)}} value={t("services")} placeholder="Select a service" />
+                    </div>
+                    <div className="col"><a href="/contact" className="navbarLink">{t("contact")}</a></div>
+                    <div className="col-1">
+                        <Dropdown options={languages} onChange={(event)=>{setLangCookie(event)}} value={getLangCookie("i18next")} placeholder="Select a language" />
+                    </div>
                 </div>
             </div>
-        </div>)
+        )
 }
 
 export default Navbar;

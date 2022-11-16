@@ -28,8 +28,3 @@ $themes : map-keys($map: $palette);
     @return map-get(map-get($palette, $theme), $key);
 }
 
-@each $theme in $themes{
-    .#{$theme}_header{
-        color: getValue($theme, "primaryColor");
-    }
-}

@@ -1,11 +1,10 @@
 import Hero from "./Hero"
-import Navbar from "./Navbar";
+import "../styles/css/main.css"
 
-const Home = () => {
+const Home = (props) => {
     return(
         <div>
-            <Navbar/>
-            <Hero/>
+            <Hero themes={props.themes} mainTheme={props.mainTheme}/>
         </div>
     );
 }

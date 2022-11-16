@@ -9,13 +9,10 @@ import "../styles/css/Hero.css";
 import Typed from "typed.js";
 import i18next from "i18next";
 
-const Hero = () => {
+const Hero = (props) => {
     const { t } = useTranslation();
     const autoTyped = useRef(null);
-    const themes = ["blue", "grey", "red", "yellow"];
-    const randIndex = Math.floor(Math.random() * 3);
-    const mainTheme = themes[randIndex];
-    const girlImage = () => {
+    const girlImage = (themes, mainTheme) => {
         switch (mainTheme) {
             case themes[0] : return blueGirl;
             case themes[1] : return greyGirl;
@@ -47,11 +44,11 @@ const Hero = () => {
     return(<div className="container">
         <div className="row">
             <div className="col d-flex align-items-center">
-                <h1>{t("heroTitle")}<span id="auto-typed" className={mainTheme + "_header"} ref={autoTyped}></span></h1>
+                <h1>{t("heroTitle")}<span id="auto-typed" className={props.mainTheme + "_header"} ref={autoTyped}></span></h1>
             </div>
             <div className="col d-flex justify-content-center">
                 <Fade left>
-                    <img className="studyingGirl" src={girlImage()} alt="Girl studying"/>
+                    <img className="studyingGirl" src={girlImage(props.themes, props.mainTheme)} alt="Girl studying"/>
                 </Fade>
             </div>
         </div>

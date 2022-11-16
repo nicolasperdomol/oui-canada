@@ -1,6 +1,13 @@
 @use "sass:map";
 @import "./themes";
 
+@each $theme in $themes{
+    .#{$theme}_header{
+        color: getValue($theme, "primaryColor");
+    }
+}
+
 .studyingGirl{
     width: 500px;
 }
+
