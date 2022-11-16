@@ -1,3 +1,9 @@
+*, html, .container {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 .blue_header {
   color: #86A5B8;
 }
@@ -15,6 +21,7 @@
 }
 
 #navbar {
+  margin: 2% 2%;
   font-size: 1.02em;
   background-color: #fff;
 }

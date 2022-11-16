@@ -1,0 +1,53 @@
+*, html, .container {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.blue_assistanceContainer {
+  min-height: 15vh;
+  background-color: #FCCC6F;
+}
+
+.blue_title {
+  text-shadow: -1px -1px 0 #000, 0 -1px 0 #000, 1px -1px 0 #000, 1px 0 0 #000, 1px 1px 0 #000, 0 1px 0 #000, -1px 1px 0 #000, -1px 0 0 #000;
+  color: white;
+  text-align: center;
+  font-size: 3em;
+}
+
+.grey_assistanceContainer {
+  min-height: 15vh;
+  background-color: #D09783;
+}
+
+.grey_title {
+  text-shadow: -1px -1px 0 #000, 0 -1px 0 #000, 1px -1px 0 #000, 1px 0 0 #000, 1px 1px 0 #000, 0 1px 0 #000, -1px 1px 0 #000, -1px 0 0 #000;
+  color: white;
+  text-align: center;
+  font-size: 3em;
+}
+
+.red_assistanceContainer {
+  min-height: 15vh;
+  background-color: #664C35;
+}
+
+.red_title {
+  text-shadow: -1px -1px 0 #000, 0 -1px 0 #000, 1px -1px 0 #000, 1px 0 0 #000, 1px 1px 0 #000, 0 1px 0 #000, -1px 1px 0 #000, -1px 0 0 #000;
+  color: white;
+  text-align: center;
+  font-size: 3em;
+}
+
+.yellow_assistanceContainer {
+  min-height: 15vh;
+  background-color: #919098;
+}
+
+.yellow_title {
+  text-shadow: -1px -1px 0 #000, 0 -1px 0 #000, 1px -1px 0 #000, 1px 0 0 #000, 1px 1px 0 #000, 0 1px 0 #000, -1px 1px 0 #000, -1px 0 0 #000;
+  color: white;
+  text-align: center;
+  font-size: 3em;
+}

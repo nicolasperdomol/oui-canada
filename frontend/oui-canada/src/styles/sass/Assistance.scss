@@ -1,0 +1,17 @@
+@use "sass:map";
+@import "./resets";
+@import "./themes";
+
+@each $theme in $themes{
+    .#{$theme}_assistanceContainer{
+        min-height: 15vh;
+        background-color: getValue($theme, "secondaryColor");
+    }
+
+    .#{$theme}_title{
+        @include stroke(#000, 1px);
+        color:white;
+        text-align: center;
+        font-size: 3em;
+    }
+}
