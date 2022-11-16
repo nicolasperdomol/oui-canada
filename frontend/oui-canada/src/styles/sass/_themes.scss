@@ -1,0 +1,35 @@
+@use "sass:list";
+@use "sass:map";
+
+$palette : 
+    ("blue" : (
+        "primaryColor":#86A5B8, 
+        "secondaryColor":#FCCC6F,
+        "ternaryColor":#DF853A
+
+    ), "grey" : (
+        "primaryColor":#F2786D, 
+        "secondaryColor":#D09783,
+        "ternaryColor":#F66356
+
+    ), "red" : (
+        "primaryColor":#FFD3CD, 
+        "secondaryColor":#664C35,
+        "ternaryColor":#E3AE7A
+
+    ), "yellow" : (
+        "primaryColor":#EDDBB7, 
+        "secondaryColor":#919098,
+        "ternaryColor":#EDB978
+));
+$themes : map-keys($map: $palette);
+
+@function getValue($theme, $key){
+    @return map-get(map-get($palette, $theme), $key);
+}
+
+@each $theme in $themes{
+    .#{$theme}_header{
+        color: getValue($theme, "primaryColor");
+    }
+}

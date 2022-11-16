@@ -28,10 +28,9 @@ function App() {
         </div>
         :
         <>
-          <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/about" element={<button className="btn btn-primary">about</button>} />
+            <Route path="/about" element={<h1>about</h1>} />
           </Routes>
         </>
         }

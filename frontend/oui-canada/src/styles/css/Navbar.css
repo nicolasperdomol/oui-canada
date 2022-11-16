@@ -1,3 +1,14 @@
 #navbar {
   min-height: 40px;
+  font-size: 1.02em;
+  background-color: #fff;
+}
+
+.navbarLink {
+  text-decoration: none;
+  color: #212529;
+}
+
+.homeTitle {
+  font-weight: bold;
 }
