@@ -3,5 +3,8 @@
     "aboutUs" : "Nosotros",
     "services" : "Servicios",
     "contact" : "Contactanos",
-    "assistTitle":"¿Como podemos asistirte?"
+    "assistTitle":"¿Como podemos asistirte?",
+    "service-interview":"ENTREVISTA PRELIMINAR",
+    "service-application":"PROCESA TU APPLICACIÓN",
+    "service-settlement":"ALOJAMIENTO"
 }

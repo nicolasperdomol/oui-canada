@@ -1,8 +1,6 @@
 import React from "react" 
 import Dropdown from 'react-dropdown';
 import { t } from "i18next";
-import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button";
 import 'react-dropdown/style.css';
 import "../styles/css/Navbar.css"
 

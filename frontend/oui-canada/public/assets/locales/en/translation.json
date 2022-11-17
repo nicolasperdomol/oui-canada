@@ -3,5 +3,8 @@
     "aboutUs" : "About us",
     "services" : "Services",
     "contact" : "Contact",
-    "assistTitle":"How can we assist you?"
+    "assistTitle":"How can we assist you?",
+    "service-interview":"PRELIMINARY INTERVIEW",
+    "service-application":"PROCESS YOUR APPLICATION",
+    "service-settlement":"SETTLEMENT"
 }
