@@ -4,7 +4,7 @@
     "services" : "Services",
     "contact" : "Contact",
     "assistTitle":"How can we assist you?",
-    "service-interview":"PRELIMINARY INTERVIEW",
-    "service-application":"PROCESS YOUR APPLICATION",
-    "service-settlement":"SETTLEMENT"
+    "studentAssistance":"Study in Canada",
+    "workerAssistance":"Work in Canada",
+    "adviceAssistance" : "Advice services"
 }

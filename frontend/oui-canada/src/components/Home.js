@@ -7,6 +7,7 @@ const Home = (props) => {
         <div>
             <Hero themes={props.themes} mainTheme={props.mainTheme}/>
             <Assistance mainTheme={props.mainTheme}/>
+            
         </div>
     );
 }

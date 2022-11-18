@@ -3,8 +3,8 @@
     "aboutUs" : "Nosotros",
     "services" : "Servicios",
     "contact" : "Contactanos",
-    "assistTitle":"¿Como podemos asistirte?",
-    "service-interview":"ENTREVISTA PRELIMINAR",
-    "service-application":"PROCESA TU APPLICACIÓN",
-    "service-settlement":"ALOJAMIENTO"
+    "assistTitle":"¿Cómo podemos asistirte?",
+    "studentAssistance":"Estudia en Canadá",
+    "workerAssistance":"Trabaja en Canadá",
+    "consultancyAssistance" : "Servicios de asesoría"
 }

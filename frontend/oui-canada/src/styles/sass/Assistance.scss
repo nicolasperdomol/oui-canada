@@ -6,6 +6,7 @@
     .#{$theme}_assistanceContainer{
         min-height: 15vh;
         background-color: getValue($theme, "secondaryColor");
+        margin-top: 4%
     }
 
     .#{$theme}_title{
@@ -13,5 +14,40 @@
         color:white;
         text-align: center;
         font-size: 3em;
+        margin-bottom: 4%;
+    }
+
+    .#{$theme}_groupCard{
+        margin-bottom: 8%;
+    }
+
+    .#{$theme}_card{
+        box-shadow: 0 1px 10px 0 #000;
+        margin: 0 0.3%;
+        > ._img{
+            object-fit: fill;
+            max-height: 260px;
+        }
+        > .card-body {
+            button:active{
+                background-color: getValue($theme, "primaryColor");
+            }
+
+            ._button{
+                font-weight: bold;
+                width: auto;
+                border-color: getValue($theme, "secondaryColor");
+                background-color: getValue($theme, "ternaryColor");
+                margin-top: 20%;
+                position:absolute;
+                left: 2%;
+                right: 2%;
+                bottom: 2%;
+            }
+        }
+        
+        > ._body{
+            min-height: 30vh;
+        }
     }
 }

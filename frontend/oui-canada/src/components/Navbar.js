@@ -25,7 +25,7 @@ const Navbar = (props) => {
     }
 
     return (
-            <div id="navbar" className="container">
+            <div id="navbar" className="container-fluid">
                 <div className="row d-flex align-items-center">
                     <div id="ouiCanada" className="col-7"><a href="/" className="navbarLink homeTitle">Oui Canada</a></div>
                     <div className="col"><a href="/about" className="navbarLink">{t("aboutUs")}</a></div>
