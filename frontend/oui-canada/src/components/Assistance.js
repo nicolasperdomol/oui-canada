@@ -1,10 +1,10 @@
 import { t } from "i18next";
 import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button"
 import studentImg from "../img/student.jpg"
 import workerImg from "../img/worker.jpg"
 import advisorImg from "../img/advisor.jpg"
 import "../styles/css/Assistance.css";
+
 const Assistance = (props) => {
     const mainTheme = props.mainTheme;
     return(<div className={`container-fluid ${props.mainTheme}_assistanceContainer`}>

@@ -1,10 +1,12 @@
 import { t } from "i18next";
-import "../styles/css/ContactUs.css"
 import Card from "react-bootstrap/Card"
 import Button from "react-bootstrap/Button";
 import ReCaptcha from "react-google-recaptcha"
 import EmailJS from "@emailjs/browser"
 import { useState } from "react";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import "../styles/css/ContactUs.css"
 
 const ContactUs = (props) => {
     const [btnDisabled, setBtnDisabled] = useState(true);
@@ -15,6 +17,18 @@ const ContactUs = (props) => {
         setReCaptcha(token)
         setBtnDisabled(false);
     }
+    const toastNotify = (toastMsg) => {
+        toast.success(toastMsg, {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        });
+    };
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -36,13 +50,31 @@ const ContactUs = (props) => {
         }
         
         EmailJS.send("oui-canada", "ouiCanadaForm", params, process.env.REACT_APP_EMAIL_KEY)
-            .then((result) => {console.log(result.text)}
-            ,(error)=>{console.log(error)});
+            .then((result) => {
+                console.log(result.text)
+                toastNotify("Success")} 
+            ,(error)=>{
+                console.log(error)
+                toast.error("Ups, something went wrong")
+            });
         e.target.reset();
     }
 
     return(<div className="container-fluid">
         <div id="contactUsRow" className="row justify-content-center">
+            <ToastContainer
+                position="top-center"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                theme="light"
+            />
+
             <div className="col-4">
                 <h1 style={{padding:"16px 0 16px 0"}}>{t("contactUsTitle")}</h1>
                 {t("contactUsSubTitle")}

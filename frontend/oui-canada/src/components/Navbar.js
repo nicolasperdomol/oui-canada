@@ -20,19 +20,12 @@ const Navbar = (props) => {
         window.location.reload()
     }
 
-    const handleServices = (event) => {
-        alert(event);
-    }
-
     return (
             <div id="navbar" className="container-fluid">
                 <div className="row d-flex align-items-center">
                     <div id="ouiCanada" className="col-7"><a href="/" className="navbarLink homeTitle">Oui Canada</a></div>
                     <div className="col"><a href="/about" className="navbarLink">{t("aboutUs")}</a></div>
-                    <div className="col">
-                        <Dropdown className="servicesDropdown" options={["First service", "Another service"]} onChange={(event)=>{handleServices(event.value)}} value={t("services")} placeholder="Select a service" />
-                    </div>
-                    <div className="col"><a href="/contact" className="navbarLink">{t("contact")}</a></div>
+                    <div className="col"><a href="#contactUsRow" className="navbarLink">{t("contact")}</a></div>
                     <div className="col-1">
                         <Dropdown options={languages} onChange={(event)=>{setLangCookie(event)}} value={getLangCookie("i18next")} placeholder="Select a language" />
                     </div>

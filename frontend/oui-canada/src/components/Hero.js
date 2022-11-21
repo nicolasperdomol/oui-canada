@@ -41,12 +41,12 @@ const Hero = (props) => {
         };
     }, [])
 
-    return(<div className="container">
+    return(<div className="container-fluid">
         <div className="row">
-            <div className="col d-flex align-items-center">
+            <div className="col offset-2 d-flex align-items-center">
                 <h1>{t("heroTitle")}<span id="auto-typed" className={props.mainTheme + "_header"} ref={autoTyped}></span></h1>
             </div>
-            <div className="col d-flex justify-content-center">
+            <div className="col">
                 <Fade left>
                     <img className="studyingGirl" src={girlImage(props.themes, props.mainTheme)} alt="Girl studying"/>
                 </Fade>
