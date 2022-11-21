@@ -34,19 +34,8 @@
 .blue_card > .card-body button:active {
   background-color: #86A5B8;
 }
-.blue_card > .card-body ._button {
-  font-weight: bold;
-  width: auto;
-  border-color: #905337;
-  background-color: #DF853A;
-  margin-top: 20%;
-  position: absolute;
-  left: 2%;
-  right: 2%;
-  bottom: 2%;
-}
 .blue_card > ._body {
-  min-height: 30vh;
+  min-height: 25vh;
 }
 
 .grey_assistanceContainer {
@@ -79,19 +68,8 @@
 .grey_card > .card-body button:active {
   background-color: #F2786D;
 }
-.grey_card > .card-body ._button {
-  font-weight: bold;
-  width: auto;
-  border-color: #D09783;
-  background-color: #F66356;
-  margin-top: 20%;
-  position: absolute;
-  left: 2%;
-  right: 2%;
-  bottom: 2%;
-}
 .grey_card > ._body {
-  min-height: 30vh;
+  min-height: 25vh;
 }
 
 .red_assistanceContainer {
@@ -124,19 +102,8 @@
 .red_card > .card-body button:active {
   background-color: #FFD3CD;
 }
-.red_card > .card-body ._button {
-  font-weight: bold;
-  width: auto;
-  border-color: #664C35;
-  background-color: #E3AE7A;
-  margin-top: 20%;
-  position: absolute;
-  left: 2%;
-  right: 2%;
-  bottom: 2%;
-}
 .red_card > ._body {
-  min-height: 30vh;
+  min-height: 25vh;
 }
 
 .yellow_assistanceContainer {
@@ -169,17 +136,6 @@
 .yellow_card > .card-body button:active {
   background-color: #EDDBB7;
 }
-.yellow_card > .card-body ._button {
-  font-weight: bold;
-  width: auto;
-  border-color: #919098;
-  background-color: #EDB978;
-  margin-top: 20%;
-  position: absolute;
-  left: 2%;
-  right: 2%;
-  bottom: 2%;
-}
 .yellow_card > ._body {
-  min-height: 30vh;
+  min-height: 25vh;
 }

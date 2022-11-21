@@ -1,0 +1,22 @@
+*, html, .container {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#contactUsRow {
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+
+#unorderList {
+  list-style-type: none;
+}
+
+#firstListItem {
+  margin-top: 2%;
+}
+
+.recatcha {
+  margin-top: 4%;
+}

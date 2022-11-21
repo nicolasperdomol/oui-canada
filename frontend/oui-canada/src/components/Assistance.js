@@ -18,7 +18,6 @@ const Assistance = (props) => {
                         <Card.Text>
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam dolore voluptatibus fugiat vero? Reprehenderit blanditiis in, quae cum et nemo beatae, saepe nisi, incidunt provident nam nostrum quasi.
                         </Card.Text>
-                        <Button className="_button ">Explore</Button>
                     </Card.Body>
                     </Card>
                     <Card className={`${mainTheme}_card`} style={{ width: '25rem'}}>
@@ -28,7 +27,6 @@ const Assistance = (props) => {
                         <Card.Text>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit possimus, tempore exercitationem sunt esse et, alias consequuntur ad reiciendis quos ea!
                         </Card.Text>
-                        <Button className="_button">Explore</Button>
                     </Card.Body>
                     </Card>
                     <Card className={`${mainTheme}_card`} style={{ width: '25rem' }}>
@@ -38,7 +36,6 @@ const Assistance = (props) => {
                         <Card.Text>
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis placeat corrupti atque, quo eius officia explicabo error sapiente reprehenderit deserunt. Quis reiciendis voluptate laudantium. Reprehenderit deleniti fugit nihil cumque architecto.
                         </Card.Text>
-                        <Button className="_button">Explore</Button>
                     </Card.Body>
                     </Card>
                 </div>

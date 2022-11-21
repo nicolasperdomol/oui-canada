@@ -32,22 +32,10 @@
             button:active{
                 background-color: getValue($theme, "primaryColor");
             }
-
-            ._button{
-                font-weight: bold;
-                width: auto;
-                border-color: getValue($theme, "secondaryColor");
-                background-color: getValue($theme, "ternaryColor");
-                margin-top: 20%;
-                position:absolute;
-                left: 2%;
-                right: 2%;
-                bottom: 2%;
-            }
         }
         
         > ._body{
-            min-height: 30vh;
+            min-height: 25vh;
         }
     }
 }

@@ -1,0 +1,23 @@
+@use "sass:map";
+@import "./resets";
+@import "./themes";
+
+@each $theme in $themes{
+}
+
+#contactUsRow{
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+#unorderList{
+    list-style-type: none;
+}
+
+#firstListItem{
+    margin-top: 2%;
+}
+
+.recatcha{
+    margin-top: 4%;
+}
