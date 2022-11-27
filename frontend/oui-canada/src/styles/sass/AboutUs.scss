@@ -1,0 +1,18 @@
+@import "./themes";
+
+#aboutUsContainer{
+    background-color: $grey;
+}
+
+.aboutUsBody{
+    background-color: white;
+}
+
+.img-fluid{
+    margin: 0;
+    padding: 0;
+}
+
+.aboutUsImg{
+    width: 400px;
+}

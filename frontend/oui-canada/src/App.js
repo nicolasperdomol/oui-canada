@@ -5,6 +5,7 @@ import {Routes, Route} from "react-router-dom";
 import "./styles/css/main.css";
 import "./components/Navbar"
 import Navbar from "./components/Navbar";
+import AboutUs from "./components/AboutUs";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -35,7 +36,7 @@ function App() {
           <Navbar mainTheme={mainTheme}/>
           <Routes>
             <Route path="/" element={<Home themes = {themes} mainTheme = {mainTheme}/>} />
-            <Route path="/about" element={<h1>about</h1>} />
+            <Route path="/about" element={<AboutUs/>} />
           </Routes>
         </>
         }

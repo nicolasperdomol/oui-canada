@@ -8,18 +8,73 @@
   color: #86A5B8;
 }
 
+#blue_heroTitleBox {
+  background-color: #86A5B8;
+  position: absolute;
+  z-index: 0;
+  height: 90px;
+  width: 225px;
+  top: -6px;
+}
+
 .grey_header {
   color: #F2786D;
+}
+
+#grey_heroTitleBox {
+  background-color: #F2786D;
+  position: absolute;
+  z-index: 0;
+  height: 90px;
+  width: 225px;
+  top: -6px;
 }
 
 .red_header {
   color: #FFD3CD;
 }
 
+#red_heroTitleBox {
+  background-color: #FFD3CD;
+  position: absolute;
+  z-index: 0;
+  height: 90px;
+  width: 225px;
+  top: -6px;
+}
+
 .yellow_header {
   color: #EDDBB7;
 }
 
+#yellow_heroTitleBox {
+  background-color: #EDDBB7;
+  position: absolute;
+  z-index: 0;
+  height: 90px;
+  width: 225px;
+  top: -6px;
+}
+
+.solidBoxContainer {
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
 .studyingGirl {
   width: 500px;
+}
+
+.heroCol {
+  background-color: white;
+}
+
+#heroTitle {
+  z-index: 1;
+  font-size: 3.8em;
+}
+
+#auto-typed {
+  color: black;
 }

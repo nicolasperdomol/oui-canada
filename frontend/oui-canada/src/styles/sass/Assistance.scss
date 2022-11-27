@@ -3,39 +3,21 @@
 @import "./themes";
 
 @each $theme in $themes{
-    .#{$theme}_assistanceContainer{
-        min-height: 15vh;
+    .#{$theme}_assistanceHeader{
         background-color: getValue($theme, "secondaryColor");
-        margin-top: 4%
     }
-
     .#{$theme}_title{
-        @include stroke(#000, 1px);
         color:white;
         text-align: center;
-        font-size: 3em;
-        margin-bottom: 4%;
     }
-
-    .#{$theme}_groupCard{
-        margin-bottom: 8%;
+    .#{$theme}_stepProgressPrimaryBtn{
+        text-decoration: none;
+        color:white
     }
-
-    .#{$theme}_card{
-        box-shadow: 0 1px 10px 0 #000;
-        margin: 0 0.3%;
-        > ._img{
-            object-fit: fill;
-            max-height: 260px;
-        }
-        > .card-body {
-            button:active{
-                background-color: getValue($theme, "primaryColor");
-            }
-        }
-        
-        > ._body{
-            min-height: 25vh;
-        }
+    .#{$theme}_stepProgressPrimaryBtn:hover{
+        color:white
+    }
+    .#{$theme}_stepProgressSecondaryBtn{
+        text-decoration: none;
     }
 }

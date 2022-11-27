@@ -12,6 +12,7 @@ import i18next from "i18next";
 const Hero = (props) => {
     const { t } = useTranslation();
     const autoTyped = useRef(null);
+    const mainTheme = props.mainTheme;
     const girlImage = (themes, mainTheme) => {
         switch (mainTheme) {
             case themes[0] : return blueGirl;
@@ -42,11 +43,13 @@ const Hero = (props) => {
     }, [])
 
     return(<div className="container-fluid">
-        <div className="row">
-            <div className="col offset-2 d-flex align-items-center">
-                <h1>{t("heroTitle")}<span id="auto-typed" className={props.mainTheme + "_header"} ref={autoTyped}></span></h1>
+        <div className="row heroMainRow">
+            <div className="col-4 heroCol offset-2 d-flex align-items-center">
+                <div className="solidBoxContainer"><div id={`${mainTheme}_heroTitleBox`}></div></div>
+                
+                <h1 id="heroTitle">{t("heroTitle")}<br/><span id="auto-typed" className={props.mainTheme + "_header"} ref={autoTyped}/></h1>
             </div>
-            <div className="col">
+            <div className="col-4 heroCol d-flex justify-content-center">
                 <Fade left>
                     <img className="studyingGirl" src={girlImage(props.themes, props.mainTheme)} alt="Girl studying"/>
                 </Fade>

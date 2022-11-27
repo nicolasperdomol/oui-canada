@@ -21,11 +21,10 @@
 }
 
 #navbar {
-  padding: 0 15vw;
-  margin-top: 2%;
+  margin-top: 1%;
   font-size: 1.02em;
   background-color: #fff;
-  margin-bottom: 4%;
+  margin-bottom: 1%;
 }
 
 .servicesDropdown > .Dropdown-control {

@@ -22,10 +22,10 @@ const Navbar = (props) => {
 
     return (
             <div id="navbar" className="container-fluid">
-                <div className="row d-flex align-items-center">
-                    <div id="ouiCanada" className="col-7"><a href="/" className="navbarLink homeTitle">Oui Canada</a></div>
-                    <div className="col"><a href="/about" className="navbarLink">{t("aboutUs")}</a></div>
-                    <div className="col"><a href="#contactUsRow" className="navbarLink">{t("contact")}</a></div>
+                <div className="row">
+                    <div id="ouiCanada" className="col-5"><a href="/" className="navbarLink homeTitle">Oui Canada</a></div>
+                    <div className="col-1 offset-4"><a href="/about" className="navbarLink">{t("aboutUs")}</a></div>
+                    <div className="col-1"><a href="#contactUsRow" className="navbarLink">{t("contact")}</a></div>
                     <div className="col-1">
                         <Dropdown options={languages} onChange={(event)=>{setLangCookie(event)}} value={getLangCookie("i18next")} placeholder="Select a language" />
                     </div>

@@ -15,5 +15,11 @@
     "lastName":"Last Name",
     "email": "Email",
     "emailSubtitle":"We'll never share your email with anyone else..",
-    "message":"Message"
+    "message":"Message",
+    "missionHeader":"Mission",
+    "missionBody":"Our mission will always be to be willing to provide you with support so that you can have a quality experience and carry out your educational training according to your profile.",
+    "visionHeader":"Vision",
+    "visionBody":"We want customers to remember us for the quality of our accompaniment and compliance with the study plans, becoming a recognized and recommended company for its excellent management.",
+    "previousBtnName":"Previous",
+    "nextBtnName":"Next"
 }

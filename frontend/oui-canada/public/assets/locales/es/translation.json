@@ -15,5 +15,11 @@
     "lastName":"Apellido",
     "email": "Correo electronico",
     "emailSubtitle":"Nunca compartiremos tu correo electrónico con otros.",
-    "message":"Mensaje"
+    "message":"Mensaje",
+    "missionHeader":"Mission",
+    "missionBody":"Nuestra misión será siempre estar dispuestos a brindarle un acompañamiento para que pueda tener una experiencia de calidad y realice su formación educativa de acuerdo a su perfil.",
+    "visionHeader":"Vision",
+    "visionBody":"Queremos que los clientes nos recuerden por la calidad de nuestro acompañamiento y el cumplimiento en los planes de estudio, llegando a ser una empresa reconocida y recomendada por su excelente gestión.",
+    "previousBtnName":"Atras",
+    "nextBtnName":"Siguiente"
 }

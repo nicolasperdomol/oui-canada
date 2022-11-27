@@ -1,44 +1,62 @@
 import { t } from "i18next";
+import StepProgressBar from 'react-step-progress';
 import Card from "react-bootstrap/Card";
-import studentImg from "../img/student.jpg"
-import workerImg from "../img/worker.jpg"
-import advisorImg from "../img/advisor.jpg"
+import 'react-step-progress/dist/index.css';
 import "../styles/css/Assistance.css";
 
 const Assistance = (props) => {
     const mainTheme = props.mainTheme;
-    return(<div className={`container-fluid ${props.mainTheme}_assistanceContainer`}>
-        <div className={`row`}>
-                <h1 className={`${props.mainTheme}_title`} style={{marginTop:"8%"}}>{t("assistTitle")}</h1>
-                <div className={`col ${mainTheme}_groupCard d-xxl-flex justify-content-center`}>
-                    <Card className={`${mainTheme}_card`} style={{ width: '25rem' }}>
-                    <Card.Img className="_img" variant="top" src={studentImg} alt="international student"/>
-                    <Card.Body className="_body">
-                        <Card.Title>{t("studentAssistance")}</Card.Title>
-                        <Card.Text>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam dolore voluptatibus fugiat vero? Reprehenderit blanditiis in, quae cum et nemo beatae, saepe nisi, incidunt provident nam nostrum quasi.
-                        </Card.Text>
-                    </Card.Body>
-                    </Card>
-                    <Card className={`${mainTheme}_card`} style={{ width: '25rem'}}>
-                    <Card.Img className="_img" variant="top" src={workerImg} alt="worker smiling"/>
-                    <Card.Body className="_body">
-                        <Card.Title>{t("workerAssistance")}</Card.Title>
-                        <Card.Text>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit possimus, tempore exercitationem sunt esse et, alias consequuntur ad reiciendis quos ea!
-                        </Card.Text>
-                    </Card.Body>
-                    </Card>
-                    <Card className={`${mainTheme}_card`} style={{ width: '25rem' }}>
-                    <Card.Img className="_img" variant="top" src={advisorImg} alt="Advisor"/>
-                    <Card.Body className="_body">
-                        <Card.Title>{t("adviceAssistance")}</Card.Title>
-                        <Card.Text>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis placeat corrupti atque, quo eius officia explicabo error sapiente reprehenderit deserunt. Quis reiciendis voluptate laudantium. Reprehenderit deleniti fugit nihil cumque architecto.
-                        </Card.Text>
-                    </Card.Body>
-                    </Card>
-                </div>
+    const step1Content = <div className="container-fluid">
+        <div className="row d-flex justify-content-center">
+            <div className="col-6">
+                <Card>
+                <Card.Img variant="top" src="holder.js/100px180" />
+                <Card.Body>
+                    <Card.Title>Card Title</Card.Title>
+                    <Card.Text>
+                    Some quick example text to build on the card title and make up the
+                    bulk of the card's content.
+                    </Card.Text>
+                </Card.Body>
+                </Card>
+            </div>
+        </div>
+    </div>;
+    const step2Content = <h1>Step 2 Content</h1>;
+    const step3Content = <h1>Step 3 Content</h1>;
+
+    return(
+    <div className="container-fluid">
+        <div className={`row ${mainTheme}_assistanceHeader`}>
+                <h2 className={`${mainTheme}_title`}>{t("assistTitle")}</h2>
+        </div>
+        <div className="row d-flex justify-content-center">
+            <div className="col-6">
+                <StepProgressBar
+                    startingStep={0}
+                    previousBtnName={t("previousBtnName")}
+                    nextBtnName={t("nextBtnName")}
+                    primaryBtnClass={`${mainTheme}_stepProgressPrimaryBtn`}
+                    secondaryBtnClass={`${mainTheme}_stepProgressSecondaryBtn`}
+                    steps={[
+                        {
+                        label: 'Step 1',
+                        name: 'step 1',
+                        content: step1Content
+                        },
+                        {
+                        label: 'Step 2',
+                        name: 'step 2',
+                        content: step2Content
+                        },
+                        {
+                        label: 'Step 3',
+                        name: 'step 3',
+                        content: step3Content
+                        }
+                    ]}
+                />
+            </div>
         </div>
     </div>)
 }

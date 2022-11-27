@@ -6,8 +6,36 @@
     .#{$theme}_header{
         color: getValue($theme, "primaryColor");
     }
+    ##{$theme}_heroTitleBox{
+        background-color: getValue($theme, "primaryColor");
+        position: absolute;
+        z-index: 0;
+        height: 90px;
+        width: 225px;
+        top:-6px;
+
+    }
+}
+
+.solidBoxContainer{
+    position:relative;
+    width: 0;
+    height: 0;
 }
 
 .studyingGirl{
     width: 500px;
+}
+
+.heroCol{
+    background-color: white;
+}
+
+#heroTitle{
+    z-index: 1;
+    font-size: 3.8em;
+}
+
+#auto-typed{
+    color: black;
 }

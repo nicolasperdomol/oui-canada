@@ -4,138 +4,90 @@
   padding: 0;
 }
 
-.blue_assistanceContainer {
-  min-height: 15vh;
+.blue_assistanceHeader {
   background-color: #905337;
-  margin-top: 4%;
 }
 
 .blue_title {
-  text-shadow: -1px -1px 0 #000, 0 -1px 0 #000, 1px -1px 0 #000, 1px 0 0 #000, 1px 1px 0 #000, 0 1px 0 #000, -1px 1px 0 #000, -1px 0 0 #000;
   color: white;
   text-align: center;
-  font-size: 3em;
-  margin-bottom: 4%;
 }
 
-.blue_groupCard {
-  margin-bottom: 8%;
+.blue_stepProgressPrimaryBtn {
+  text-decoration: none;
+  color: white;
 }
 
-.blue_card {
-  box-shadow: 0 1px 10px 0 #000;
-  margin: 0 0.3%;
-}
-.blue_card > ._img {
-  -o-object-fit: fill;
-     object-fit: fill;
-  max-height: 260px;
-}
-.blue_card > .card-body button:active {
-  background-color: #86A5B8;
-}
-.blue_card > ._body {
-  min-height: 25vh;
+.blue_stepProgressPrimaryBtn:hover {
+  color: white;
 }
 
-.grey_assistanceContainer {
-  min-height: 15vh;
+.blue_stepProgressSecondaryBtn {
+  text-decoration: none;
+}
+
+.grey_assistanceHeader {
   background-color: #D09783;
-  margin-top: 4%;
 }
 
 .grey_title {
-  text-shadow: -1px -1px 0 #000, 0 -1px 0 #000, 1px -1px 0 #000, 1px 0 0 #000, 1px 1px 0 #000, 0 1px 0 #000, -1px 1px 0 #000, -1px 0 0 #000;
   color: white;
   text-align: center;
-  font-size: 3em;
-  margin-bottom: 4%;
 }
 
-.grey_groupCard {
-  margin-bottom: 8%;
+.grey_stepProgressPrimaryBtn {
+  text-decoration: none;
+  color: white;
 }
 
-.grey_card {
-  box-shadow: 0 1px 10px 0 #000;
-  margin: 0 0.3%;
-}
-.grey_card > ._img {
-  -o-object-fit: fill;
-     object-fit: fill;
-  max-height: 260px;
-}
-.grey_card > .card-body button:active {
-  background-color: #F2786D;
-}
-.grey_card > ._body {
-  min-height: 25vh;
+.grey_stepProgressPrimaryBtn:hover {
+  color: white;
 }
 
-.red_assistanceContainer {
-  min-height: 15vh;
+.grey_stepProgressSecondaryBtn {
+  text-decoration: none;
+}
+
+.red_assistanceHeader {
   background-color: #664C35;
-  margin-top: 4%;
 }
 
 .red_title {
-  text-shadow: -1px -1px 0 #000, 0 -1px 0 #000, 1px -1px 0 #000, 1px 0 0 #000, 1px 1px 0 #000, 0 1px 0 #000, -1px 1px 0 #000, -1px 0 0 #000;
   color: white;
   text-align: center;
-  font-size: 3em;
-  margin-bottom: 4%;
 }
 
-.red_groupCard {
-  margin-bottom: 8%;
+.red_stepProgressPrimaryBtn {
+  text-decoration: none;
+  color: white;
 }
 
-.red_card {
-  box-shadow: 0 1px 10px 0 #000;
-  margin: 0 0.3%;
-}
-.red_card > ._img {
-  -o-object-fit: fill;
-     object-fit: fill;
-  max-height: 260px;
-}
-.red_card > .card-body button:active {
-  background-color: #FFD3CD;
-}
-.red_card > ._body {
-  min-height: 25vh;
+.red_stepProgressPrimaryBtn:hover {
+  color: white;
 }
 
-.yellow_assistanceContainer {
-  min-height: 15vh;
+.red_stepProgressSecondaryBtn {
+  text-decoration: none;
+}
+
+.yellow_assistanceHeader {
   background-color: #919098;
-  margin-top: 4%;
 }
 
 .yellow_title {
-  text-shadow: -1px -1px 0 #000, 0 -1px 0 #000, 1px -1px 0 #000, 1px 0 0 #000, 1px 1px 0 #000, 0 1px 0 #000, -1px 1px 0 #000, -1px 0 0 #000;
   color: white;
   text-align: center;
-  font-size: 3em;
-  margin-bottom: 4%;
 }
 
-.yellow_groupCard {
-  margin-bottom: 8%;
+.yellow_stepProgressPrimaryBtn {
+  text-decoration: none;
+  color: white;
 }
 
-.yellow_card {
-  box-shadow: 0 1px 10px 0 #000;
-  margin: 0 0.3%;
+.yellow_stepProgressPrimaryBtn:hover {
+  color: white;
 }
-.yellow_card > ._img {
-  -o-object-fit: fill;
-     object-fit: fill;
-  max-height: 260px;
-}
-.yellow_card > .card-body button:active {
-  background-color: #EDDBB7;
-}
-.yellow_card > ._body {
-  min-height: 25vh;
+
+.yellow_stepProgressSecondaryBtn {
+  text-decoration: none;
 }

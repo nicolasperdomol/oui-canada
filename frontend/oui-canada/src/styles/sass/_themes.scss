@@ -23,19 +23,9 @@ $palette :
         "ternaryColor":#EDB978
 ));
 $themes : map-keys($map: $palette);
+$grey: #faf7f7;
 
 @function getValue($theme, $key){
     @return map-get(map-get($palette, $theme), $key);
 }
 
-@mixin stroke($color: #000, $size: 1px) {
-    text-shadow:
-    -#{$size} -#{$size} 0 $color,
-    0        -#{$size} 0 $color,
-    #{$size} -#{$size} 0 $color,
-    #{$size}  0        0 $color,
-    #{$size}  #{$size} 0 $color,
-    0         #{$size} 0 $color,
-    -#{$size}  #{$size} 0 $color,
-    -#{$size}  0        0 $color;
-}
