@@ -16,7 +16,7 @@ This project was created with the intention of creating a stylish, user-friendly
 1. Clone the repository to your local machine
 
 ```
-$ git clone https://github.com/username/oui-canada.git
+$ git clone https://github.com/nicolasperdomol/oui-canada.git
 ```
 
 2. Change into the directory
