@@ -109,11 +109,11 @@ const ContactUs = (props) => {
                                         <textarea className="form-control" name="message" id="textAreaExample" rows="4" placeholder="message"></textarea>
                                         <label htmlFor="floatingMessage">{t("message")}</label>
                                     </div>
-                                    <ReCaptcha 
+                                    {/* <ReCaptcha 
                                         className="recatcha"
                                         sitekey= {process.env.REACT_APP_SITE_KEY}
                                         onChange={(token)=>{handleReCaptcha(token)}}
-                                    />
+                                    /> */}
                                 </div>
                                 <Button type="submit" id="contactUsFormBtn" className={`mt-4 ${mainTheme}_contactUsFormBtn`} disabled={btnDisabled}>Send</Button>
                             </div>

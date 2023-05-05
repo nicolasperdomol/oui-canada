@@ -10,7 +10,6 @@ const Assistance = (props) => {
         <div className="row d-flex justify-content-center">
             <div className="col-6">
                 <Card>
-                <Card.Img variant="top" src="holder.js/100px180" />
                 <Card.Body>
                     <Card.Title>Card Title</Card.Title>
                     <Card.Text>
