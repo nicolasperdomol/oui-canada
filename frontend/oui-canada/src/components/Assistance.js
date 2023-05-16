@@ -5,6 +5,7 @@ import 'react-step-progress/dist/index.css';
 import "../styles/css/Assistance.css";
 import library from '../img/library.png'
 import health from '../img/health.jpg'
+import carAirport from '../img/car_airport.jpg'
 
 const Assistance = (props) => {
     const mainTheme = props.mainTheme;
@@ -44,6 +45,7 @@ const Assistance = (props) => {
                     <Card.Body>
                         <Card.Title>{t("assistanceAfterYouArriveTitle")}</Card.Title>
                         <Card.Text>{t("assistanceAfterYouArrive")}</Card.Text>
+                        <Card.Img src={carAirport}/>
                     </Card.Body>
                     </Card>
                 </div>
