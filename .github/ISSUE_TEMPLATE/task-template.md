@@ -1,8 +1,8 @@
 ---
-name: Issue template
+name: Task template
 about: Describe this issue template's purpose here.
 title: ''
-labels: ''
+labels: task
 assignees: nicolasperdomol
 
 ---
