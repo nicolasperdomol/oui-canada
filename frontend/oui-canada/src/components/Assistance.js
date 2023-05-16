@@ -3,27 +3,52 @@ import StepProgressBar from 'react-step-progress';
 import Card from "react-bootstrap/Card";
 import 'react-step-progress/dist/index.css';
 import "../styles/css/Assistance.css";
+import library from '../img/library.png'
+import health from '../img/health.jpg'
 
 const Assistance = (props) => {
     const mainTheme = props.mainTheme;
-    const step1Content = <div className="container-fluid">
-        <div className="row d-flex justify-content-center">
-            <div className="col-6">
-                <Card>
-                <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
-                    <Card.Text>
-                    Some quick example text to build on the card title and make up the
-                    bulk of the card's content.
-                    </Card.Text>
-                </Card.Body>
-                </Card>
+    const step1Content = 
+        <div className="container-fluid">
+            <div className="row d-flex justify-content-center">
+                <div className="col-6">
+                    <Card>
+                    <Card.Body>
+                        <Card.Title>{t("assistanceCollegeTitle")}</Card.Title>
+                        <Card.Text>{t("assistanceCollege")}</Card.Text>
+                        <Card.Img src={library}/>
+                    </Card.Body>
+                    </Card>
+                </div>
             </div>
-        </div>
-    </div>;
-    const step2Content = <h1>Step 2 Content</h1>;
-    const step3Content = <h1>Step 3 Content</h1>;
-
+        </div>;
+    const step2Content = 
+        <div className="container-fluid">
+            <div className="row d-flex justify-content-center">
+                <div className="col-6">
+                    <Card>
+                    <Card.Body>
+                        <Card.Title>{t("assistanceInsuranceTitle")}</Card.Title>
+                        <Card.Text>{t("assistanceInsurance")}</Card.Text>
+                        <Card.Img src={health}/>
+                    </Card.Body>
+                    </Card>
+                </div>
+            </div>
+        </div>;
+    const step3Content = 
+        <div className="container-fluid">
+            <div className="row d-flex justify-content-center">
+                <div className="col-6">
+                    <Card>
+                    <Card.Body>
+                        <Card.Title>{t("assistanceAfterYouArriveTitle")}</Card.Title>
+                        <Card.Text>{t("assistanceAfterYouArrive")}</Card.Text>
+                    </Card.Body>
+                    </Card>
+                </div>
+            </div>
+        </div>;
     return(
     <div className="container-fluid">
         <div className={`row ${mainTheme}_assistanceHeader`}>
