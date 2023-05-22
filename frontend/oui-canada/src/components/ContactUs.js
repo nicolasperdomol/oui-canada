@@ -1,7 +1,7 @@
 import { t } from "i18next";
 import Card from "react-bootstrap/Card"
 import Button from "react-bootstrap/Button";
-import ReCaptcha from "react-google-recaptcha"
+// import ReCaptcha from "react-google-recaptcha"
 import EmailJS from "@emailjs/browser"
 import { useState } from "react";
 import { ToastContainer, toast } from 'react-toastify';
@@ -9,14 +9,14 @@ import 'react-toastify/dist/ReactToastify.css';
 import "../styles/css/ContactUs.css"
 
 const ContactUs = (props) => {
-    const [btnDisabled, setBtnDisabled] = useState(true);
-    const [reCaptcha, setReCaptcha] = useState(null);
+    const [btnDisabled] = useState(true);
+    const [reCaptcha] = useState(null);
     const mainTheme = props.mainTheme;
 
-    const handleReCaptcha = (token) => {
-        setReCaptcha(token)
-        setBtnDisabled(false);
-    }
+    // const handleReCaptcha = (token) => {
+    //     setReCaptcha(token)
+    //     setBtnDisabled(false);
+    // }
     const toastNotify = (toastMsg) => {
         toast.success(toastMsg, {
         position: "top-center",
